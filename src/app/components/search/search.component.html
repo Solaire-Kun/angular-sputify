@@ -1,0 +1,5 @@
+<div class="input-group flex-nowrap bg-dark mt-4">
+    <input type="text" class="form-control  border-dark" placeholder="Search..." [(ngModel)]="inputQuery" name="search" (keydown.enter)="search($event)"> <br>
+    <input type="number" class="form-control  border-dark" placeholder="Amount" [(ngModel)]="amountQuery" name="amount" (keydown.enter)="search($event)"> <br>
+    <button class="btn btn-success" (click)="search($event)">SEARCH</button>
+</div>

@@ -1,0 +1,12 @@
+<form class="container card-body p-4 mt-5 rounded border border-dark w-50 shadow" style="background-color: #1e1e1e;">
+    <h1 class="mb-3 text-center">Login</h1>
+    <div class="mb-3">
+        <label class="form-label">Client ID</label>
+        <input [(ngModel)]="clientId" type="text" class="form-control border-dark" name="Client ID">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Client Secret</label>
+        <input [(ngModel)]="clientSecret" type="text" class="form-control border-dark" name="Client Secret">
+    </div>
+    <button (click)="login()" type="submit" class="btn btn-success mt-2">Login</button>
+</form>
